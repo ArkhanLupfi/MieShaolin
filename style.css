@@ -1,0 +1,745 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    background-color: white;
+}
+
+.navbar-brand .img1{
+    width: 130px;
+    height: 60px;
+}
+
+.nav-item .cons {
+    width: 120px;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #FC5573;
+}
+
+.nav-link {
+    margin-left: 36px;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+}
+
+.nav-link.active:not(.cons) {
+    font-weight: bold;
+    color: #d82525 !important;
+}
+
+
+/* Home */
+#Home {
+    width: 100vw;
+    height: 100vh;
+    margin-top: -4em;
+    background-size: contain;
+    background-position-x: right;
+    background-image: url(Assets/Background/Hero.png);
+}
+
+.home-background {
+    display: flex;
+
+    height: 100vh;
+    align-items: center;
+}
+
+.line {
+    float: left;
+    width: 40px;
+    height: 2px;
+    margin-top: 10px;
+    margin-right: 12px;
+    background-color: #D82525; 
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.tagline1 {
+    font-size: 42px;
+    color: #E54545;
+    font-weight: Bold;
+}
+
+.tagline2 {
+    width: 23vw;
+    font-size: 16px;
+    color: #9B9B9B;
+    font-weight: 400;
+}
+
+a .menu {
+    width: 132px;
+    height: 40px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 12px;
+    border-radius: 100px;
+    background-color: #FC5573;
+    font-family: "Balsamiq Sans", sans-serif;
+    box-shadow: 0 3px 3px rgba(0, 28, 95, 0.2);
+}
+
+a .menu:hover {
+    color: white;
+    background-color: #333;
+}
+
+a .order {
+    width: 132px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 100px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+a .order:hover {
+    box-shadow: 0 3px 3px rgba(0, 28, 95, 0.2);
+}
+
+.scroll {
+    font-size: 14px;
+    color: #BE4A31;
+	text-decoration: none;
+}
+
+.scroll-content  :hover {
+	transform: translateY(0.25rem);
+}
+
+
+/* Our Service */
+#OurService {
+    padding-top: 2em;
+}
+
+.service {
+    padding-top: 2.5em;
+    border-radius: 20px;
+    padding-bottom: 2.5em;
+    background-color: #FAFAFA;
+}
+
+.heading-content {
+    width: 180px;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.heading-title {
+    font-size: 16px;
+    color: #E84865;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-tagline {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.offer-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #E84865;
+    font-style: normal;
+    font-family: "Poppins", sans-serif;
+}
+
+.sub-text {
+    font-size: 16px;
+    color: #9B9B9B;
+}
+
+/* Special Menu */
+#Menu {
+    padding-top: 5em;
+    font-family: "Poppins", sans-serif;
+}
+
+.heading-text {
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 40px;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.card.text-center {
+    border: none;
+}
+
+.text-start {
+    padding-top: 1em;
+}
+
+.text-muted {
+    font-size: 14px;
+}
+
+.card {
+    transition: box-shadow 0.3s ease; /* Animasi saat hover */
+}
+
+.card:hover {
+    border-radius: 15px;
+    background-color: #FBFBFB;
+    box-shadow: 2px 4px 4px rgba(0, 28, 95, 0.2); 
+}
+
+.rating-content {
+    top: 16px; 
+    right: 16px; 
+    width: 74px;
+    height: 30px;
+    font-size: 14px;
+    display: flex;
+    position: absolute;
+    align-items: center; 
+    border-radius: 100px;
+    justify-content: center; 
+    background-color: #E9E9E9;
+}
+
+.rating-content img {
+    margin-right: 8px; 
+}
+
+.btn.btn-love{
+    width: 40px;
+	height: 40px;
+    align-items: center;
+    justify-content: center;
+	border: 1px solid #e4e4e4;
+}
+
+.btn.btn-whatsapp {
+    width: 40px;
+	height: 40px;
+    align-items: center;
+    justify-content: center;
+	background-color: #f25d5d;
+}
+
+
+@keyframes whatsappButtonAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-whatsapp:hover {
+    animation: whatsappButtonAnimation 1s ease-in-out;
+}
+
+
+/* Promotion */
+#Promotion {
+    display: flex;
+    padding-top: 7em;
+    font-family: "Poppins", sans-serif;
+}
+
+.card.text {
+    border: none;
+    background-color: white;
+}
+
+.card-img2 {
+    display: none;
+}
+
+.card-img-overlay.hp {
+    display: none;
+}
+
+.card-title.hp{
+    display: none;
+}
+
+.card-subtext.hp {
+    display: none; 
+}
+
+.content-price {
+    display: none;
+}
+
+a .specialmenu-hp {
+    display: none;
+}
+
+.button-section-hp {
+    display: none;
+}
+
+.card.text:hover {
+    box-shadow: none;
+}
+
+.card-img-overlay {
+    width: 34%;
+    margin-top: 5em;
+    margin-left: 5em;
+}
+
+.card-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 140%;
+}
+
+.card-subtext {
+    width: 70%;
+    font-size: 14px;
+    margin-top: 16px;
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+
+a .specialmenu {
+    width: 132px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 100px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+a .specialmenu:hover {
+    box-shadow: 0 3px 3px rgba(0, 28, 95, 0.2);
+}
+
+.price {
+    color: white;
+    font-size: 20px;
+    margin-left: 1em;
+    margin-right: 0.5em;
+    font-weight: bold;
+}
+
+.disc {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: oblique;
+    text-decoration: line-through;
+}
+
+
+/* Ingredients */
+#Ingredients {
+    padding-top: 5em;
+}
+
+.ingredients-data h2 {
+    line-height: 140%;
+    padding-bottom: 0.4em;
+}
+
+.sub-heading {
+    width: 420px;
+    font-size: 16px;
+}
+
+.ingredients-data ul li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Poppins", sans-serif;
+}
+
+.ingredients-data ul li img {
+    margin-right: 4px; 
+}
+
+a .ingredients{
+    color: white;
+    width: 132px;
+    height: 40px;
+    font-size: 12px;
+    margin-top: 1.5em;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #FC5573;
+    transition: all 0.3s ease-in-out;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+a .ingredients i {
+    display: none; /* Sembunyikan ikon secara default */
+}
+
+a .ingredients:hover i {
+    display: inline-block; 
+    box-shadow: 0 3px 3px rgba(0, 28, 95, 0.2);
+}
+
+a .ingredients:hover {
+    color: white;
+    background-color: #32886F;
+}
+
+
+/* Testimonial */
+#testimonials {
+	padding-top: 7em;
+    padding-bottom: 7em;
+}
+
+#testimonials span {
+	padding-bottom: 1.5em;
+}
+
+.bi {
+	color: #FC5573;
+}
+
+.testi-item {
+	border-radius: 8px;
+    box-sizing: border-box;
+	border: solid 3px whitesmoke;
+    box-shadow: 1px 1px 1px lightgray;
+}
+
+
+/* Footer */
+/* CSS for Footer */
+footer {
+    padding-top: 2em;
+    font-family: "Poppins", sans-serif;
+}
+
+.head-footer {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-family: "Caveat", cursive;
+}
+
+.sub-footer {
+    font-size: 12px;
+    color: #eeeff4;
+}
+
+.list-unstyled li {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.list-opening li {
+    font-size: 12px;
+    color: #eeeff4;
+    margin-left: -1em;
+    margin-bottom: 12px;
+}
+
+.list-unstyled li a {
+    color: #eeeff4;
+    text-decoration: none;
+}
+
+.Copyright {
+    font-size: 12px;
+}
+
+
+
+/* Responsive Breakpoint */
+@media (max-width: 768px) {
+    @media screen and (max-width: 576px) {      
+        body {
+			margin: 0;
+			padding: 0;
+			overflow-x: hidden !important;
+			overflow-y: scroll;
+			box-sizing: border-box;
+			scroll-behavior: smooth;
+		}		
+
+        nav {
+            overflow-x: hidden;
+        }
+
+        .nav-item .nav-link {
+            font-size: 14px;
+        }
+
+        .navbar-brand .img1{
+            width: 100px;
+            height: 50px;
+        }
+
+        #Home {
+            width: 100%;
+            height: 50%;
+            background-repeat: no-repeat;
+            background-image: url(Assets/Background/Hero2.png);
+        }
+
+        .col-home {
+            width: 250px;
+            margin-top: -5em;
+        }
+
+        .line {
+            width: 20px;
+            margin-right: 8px;
+        }
+        
+                
+        .tagline1 {
+            font-size: 32px;
+            color: #E54545;
+            font-weight: Bold;
+        }
+
+        .tagline2 {
+            width: 40vw;
+        }
+
+        a .menu {
+            width: 90px;
+            height: 36px;
+            color: white;
+            font-size: 10px;
+            margin-top: 12px;
+            font-weight: bold;
+            margin-right: 12px;
+            border-radius: 100px;
+            background-color: #FC5573;
+            font-family: "Balsamiq Sans", sans-serif;
+            box-shadow: 0 3px 3px rgba(0, 28, 95, 0.2);
+        }
+        
+        a .menu:hover {
+            color: white;
+            background-color: #333;
+        }
+        
+        a .order {
+            width: 90px;
+            height: 36px;
+            font-size: 10px;
+            margin-top: 12px;
+            font-weight: bold;
+            border-radius: 100px;
+            background-color: white;
+            transition: all 0.3s ease-in-out;
+            font-family: "Balsamiq Sans", sans-serif;
+        }
+        
+        a .order:hover {
+            box-shadow: 0 3px 3px rgba(0, 28, 95, 0.2);
+        }
+
+        .scroll{
+            margin-top: 5em;
+            position: absolute;
+        }
+        /* End home */
+
+
+        #OurService {
+            padding-top: 1em;
+        }
+
+        .text-tagline {
+            font-size: 28px;
+        }
+
+        .heading-content {
+            width: 80vw;
+            font-family: "Balsamiq Sans", sans-serif;
+        }
+        /* End Service */
+
+        .heading-text {
+            font-size: 28px;
+        }
+
+        .card-menu {
+            margin-bottom: 12px;
+        }
+
+        /* End Menu */
+
+
+        #Promotion {
+            padding-top: 5em;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .card-img1 {
+            display: none;
+        }
+
+        .card-img2 {
+            margin-left: 1em;
+            margin-right: 1em;
+            display: inline-block;
+        }
+
+        .card-img-overlay {
+            width: 64%;
+            display: none;
+            margin-top: -3em;
+        }
+        
+        .card-img-overlay.hp {
+            margin-top: 1em;
+            margin-left: 1em;
+            display: inline-block;
+        }
+        
+        .card-title.hp {
+            margin-bottom: -0px;
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 150%;
+            display: inline-block;
+        }
+
+        .card-subtext.hp {
+            width: 70%;
+            margin-top: 0px;
+            font-size: 10px;
+            font-weight: 500;
+            display: inline-block;
+            color: rgba(0, 0, 0, 0.7); 
+        }
+
+        .card-subtext.hp span {
+            color: black;
+            font-weight: 600;
+        }
+
+        .content-price {
+            margin-top: -8px;
+            display: inline-block;
+        }
+
+
+        .price-hp {
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 0.5em;
+        }
+        
+        .disc-hp {
+            color: #7B7B7B;
+            font-size: 10px;
+            font-weight: 500;
+            font-style: oblique;
+            text-decoration: line-through;
+        }
+
+        .button-section-hp {
+            margin-top: 16px; 
+            display: inline-block;
+        }
+
+        a .specialmenu-hp {
+            width: 85px;
+            height: 30px;
+            color: white;
+            font-size: 9px;
+            font-weight: bold;
+            border-radius: 4px;
+            display: inline-block;
+            background-color: #F25D5D;
+            transition: all 0.3s ease-in-out;
+            font-family: "Balsamiq Sans", sans-serif;
+        }
+        
+        a .specialmenu-hp:hover {
+            color: white;
+            background-color: #FCC025;
+            box-shadow: 0 3px 3px rgba(0, 28, 95, 0.2);
+        }
+        
+        /* End Promotion */
+
+
+        #Ingredients {
+            padding-top: 4em;
+        }
+
+        .ingredients-img img{
+            width: 250px;
+            padding-bottom: 2em;
+        }
+
+        .ingredients-data {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+
+        .sub-heading {
+            width: 350px;
+            font-size: 14px;
+        }
+        
+        .ingredients-data ul li {
+            font-size: 10px;
+            margin-bottom: 8px;
+        }
+
+        a .ingredients{
+            color: white;
+            width: 110px;
+            height: 40px;
+            font-size: 12px;
+            margin-top: 1.5em;
+            font-weight: bold;
+            border-radius: 8px;
+            background-color: #FC5573;
+            transition: all 0.3s ease-in-out;
+            font-family: "Balsamiq Sans", sans-serif;
+        }
+        /* End Ingredients */
+
+
+        #testimonials {
+            padding-top: 4em;
+            padding-bottom: 4em;
+        }
+
+        .Copyright {
+            padding-bottom: 1em;
+        }
+        
+    }
+}
