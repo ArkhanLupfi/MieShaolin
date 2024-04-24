@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
         orderButton.style.backgroundColor = '';
     });
 
-
     // Mendapatkan semua button dengan kelas .btn-whatsapp
     const whatsappButtons = document.querySelectorAll('.btn-whatsapp');
 
@@ -78,6 +77,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 button.innerHTML = button.dataset.originalButton;
                 button.style.backgroundColor = '#f25d5d';
             });
+        } else {
+            button.addEventListener('mouseenter', function() {
+                // Simpan konten asli ke dalam atribut data
+                button.dataset.originalButton = originalButton;
+                // Ganti konten dengan ikon WhatsApp
+                button.style.backgroundColor = '#f25d5d';
+            });
         }
 
         // Mendengarkan event klik pada setiap tombol
@@ -100,7 +106,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // Membuka WhatsApp di tab atau jendela baru
         window.open(whatsappURL, "_blank");
     }
-
 
     // Mendapatkan semua button dengan kelas .btn-love
     const loveButtons = document.querySelectorAll('.btn-love');
