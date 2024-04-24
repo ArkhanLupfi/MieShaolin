@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 
-    // Hover Button Whatsapp
+    // Mendapatkan semua button dengan kelas .btn-whatsapp
     const whatsappButtons = document.querySelectorAll('.btn-whatsapp');
 
     // Loop melalui setiap button WhatsApp
@@ -60,32 +60,32 @@ document.addEventListener("DOMContentLoaded", function() {
         const originalButton = button.innerHTML;
         const menuName = button.parentElement.querySelector('h3').textContent.trim(); // Mendapatkan nama menu dari teks di dalam elemen h3
 
-        // Event saat hover dimulai
-        button.addEventListener('mouseenter', function() {
-            // Simpan konten asli ke dalam atribut data
-            button.dataset.originalButton = originalButton;
-            // Ganti konten dengan ikon WhatsApp
-            button.innerHTML = '<i class="fab fa-whatsapp" style="font-size: 20px;"></i>';
-            // Mengubah warna latar belakang dan teks saat di-hover
-            button.style.color = 'white';
-            button.style.backgroundColor = '#25D366';
-            
-        });
+        // Event saat hover dimulai jika lebar layar lebih dari 768px
+        if (window.innerWidth > 768) {
+            button.addEventListener('mouseenter', function() {
+                // Simpan konten asli ke dalam atribut data
+                button.dataset.originalButton = originalButton;
+                // Ganti konten dengan ikon WhatsApp
+                button.innerHTML = '<i class="fab fa-whatsapp" style="font-size: 20px;"></i>';
+                // Mengubah warna latar belakang dan teks saat di-hover
+                button.style.color = 'white';
+                button.style.backgroundColor = '#25D366';
+            });
+
+            // Event saat hover selesai jika lebar layar lebih dari 768px
+            button.addEventListener('mouseleave', function() {
+                // Mengembalikan konten ke konten asli
+                button.innerHTML = button.dataset.originalButton;
+                button.style.backgroundColor = '#f25d5d';
+            });
+        }
 
         // Mendengarkan event klik pada setiap tombol
         button.addEventListener('click', function() {
             // Memanggil fungsi chat dengan nama menu sebagai argumen
             chat(menuName);
         });
-
-        // Event saat hover selesai
-        button.addEventListener('mouseleave', function() {
-            // Mengembalikan konten ke konten asli
-            button.innerHTML = button.dataset.originalButton;
-            button.style.backgroundColor = '#f25d5d';
-        }, 5000);
     });
-
 
     // Fungsi untuk mengirim pesan WhatsApp
     function chat(menuName) {
