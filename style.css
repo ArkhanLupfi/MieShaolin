@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     box-sizing: border-box;
+    overflow-x: hidden !important;
     font-family: "Poppins", sans-serif;
 }
 
@@ -44,13 +44,13 @@ nav {
     height: 100vh;
     margin-top: -4em;
     background-size: contain;
+    background-repeat: no-repeat;
     background-position-x: right;
     background-image: url(Assets/Background/Hero.png);
 }
 
 .home-background {
     display: flex;
-
     height: 100vh;
     align-items: center;
 }
@@ -505,8 +505,8 @@ footer {
         body {
 			margin: 0;
 			padding: 0;
-			overflow-x: hidden !important;
 			overflow-y: scroll;
+			overflow-x: hidden !important;
 			box-sizing: border-box;
 			scroll-behavior: smooth;
 		}		
